@@ -5,6 +5,7 @@
 - **Público alvo**: alunos da disciplina de SO (Sistemas Operacionais) do curso de TADS (Superior em Tecnologia em Análise e Desenvolvimento de Sistemas) no CNAT-IFRN (Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte - Campus Natal-Central).
 - disciplina: **SO** Sistemas Operacionais
 - professor: [Leonardo A. Minora](https://github.com/leonardo-minora)
+- aluno: Raul Alexsander Dantas da Silva Trindade (https://github.com/raulalexsander)
 
 ## Avaliação
 - **Lembre de fazer o fork deste repositório**
@@ -22,6 +23,20 @@ Considere as funções e objetivos principais de um sistema operacional conforme
 **Dica**: Pense em exemplos práticos de como o sistema operacional realiza essas tarefas no dia a dia de um usuário.
 
 **Copilot informa**: Essa questão incentiva os alunos a explorarem os conceitos fundamentais e a aplicarem o conhecimento teórico em situações práticas. Se precisar de mais alguma coisa, estou aqui para ajudar!
+
+# Resposta da Questão 1.
+Um sistema operacional gerencia os recursos de hardware e software de um computador para garantir eficiência e segurança, desempenhando as seguintes funções:
+
+1 - Gerenciamento de processos: Controla a execução de processos, garantindo multitarefas e alocação eficiente da CPU. O sistema operacional organiza filas de execução, trocas de contexto e protege processos uns dos outros, evitando interferências.
+
+2 - Gerenciamento de memória: Aloca e libera memória para programas em execução, garantindo o uso eficiente e evitando conflitos como os acessos simultâneos por exemplo. Protege áreas de memória críticas e gerencia a memória virtual, aumentando a capacidade.
+
+3 - Gerenciamento de dispositivos de entrada e saída: Coordena o acesso ao hardware (teclados, mouse, impressoras e outros periféricos) por meio de drivers, evitando conflitos entre processos e assegurando comunicação eficiente com dispositivos.
+
+4 - Gerenciamento de arquivos: Fornece um sistema hierárquico para armazenamento e acesso a dados, controlando permissões de leitura, gravação e execução, garantindo segurança e integridade de dados.
+
+Desta forma, o sistema operacional atua como intermediário entre hardware e software, otimizando recursos e protegendo o sistema.
+
 
 # Questão 2. Estrutura de sistemas operacionais
 
@@ -70,6 +85,41 @@ Com base no texto sobre a estrutura de sistemas operacionais, analise como as di
 
 **Copilot informa**: Essa questão incentiva os alunos a considerarem tanto os aspectos econômicos quanto os de segurança ao avaliar diferentes arquiteturas de sistemas operacionais.
 
+# Resposta da Questão 2.
+As diferentes arquiteturas de sistemas operacionais impactam o custo e a segurança de diferente formas:
+
+1 - Arquitetura Monolítica:
+
+Complexidade: Menos complexa para implementar inicialmente, mas manutenção é mais complexa devido à integração de componentes.
+
+Especialização: Menor necessidade inicial de especialização, mas a equipe deve-se ter cuidado com alterações.
+
+Vulnerabilidades: Mais propenso a erros críticos, pois problemas em um componente podem comprometer todo o sistema.
+
+Atualização: Alterações exigem testes maiores, dificultando atualizações rápidas.
+
+2 - Arquitetura Microkernel:
+
+Complexidade: Alta complexidade inicial, pois envolve modularização rigorosa.
+
+Especialização: Demanda equipe qualificada para desenvolvimento e integração de serviços separados.
+
+Vulnerabilidades: Menos vulnerável, já que falhas em módulos isolados não afetam o núcleo.
+
+Atualização: Mais fácil e segura, pois mudanças em módulos específicos têm impacto limitado.
+
+3 - Arquitetura em Camadas:
+
+Complexidade: Moderada, com definição clara de camadas e interfaces.
+
+Especialização: Requer equipe com habilidades para projetar e gerenciar camadas.
+
+Vulnerabilidades: Oferece boa segurança, mas falhas na comunicação entre camadas podem ser um problema.
+
+Atualização: Problemas podem ser corrigidos em camadas específicas, facilitando a manutenção.
+
+Com isso podemos entender que a escolha da arquitetura afeta o equilíbrio entre os custos iniciais, manutenção e segurança, demandando decisões baseadas nas prioridades do sistema.
+
 # Questão 3. Introdução à Segurança de Sistemas Operacionais
 
 ## Texto informativo
@@ -86,7 +136,6 @@ A segurança de um sistema operacional é um aspecto crucial que visa proteger o
 
 5. **Atualizações e Patches**: Manter o sistema operacional atualizado é essencial para corrigir vulnerabilidades conhecidas e proteger contra novas ameaças.
 
-
 ## Questão
 
 Considerando os mecanismos de segurança discutidos, analise como a implementação de controles de acesso e criptografia pode impactar a performance e a usabilidade de um sistema operacional. Em sua resposta, aborde os seguintes pontos:
@@ -98,6 +147,30 @@ Considerando os mecanismos de segurança discutidos, analise como a implementaç
 
 **Copilot informa**: Essa questão incentiva os alunos a refletirem sobre o equilíbrio entre segurança, performance e usabilidade, aplicando conceitos teóricos a contextos práticos.
 
+# Resposta da Questão 3.
+A implementação de controles de acesso e criptografia em sistemas operacionais impacta a performance e a usabilidade de maneiras diferentes:
+
+1 - Controles de Acesso:
+
+Benefícios: Garante a proteção contra acessos não autorizados, preservando a integridade e confidencialidade dos dados.
+
+Desafios: Pode ser complexo para o usuário, com múltiplos níveis de autenticação, afetando a usabilidade.
+
+Impacto no usuário: Exige autenticações frequentes, mas aumenta a sensação de segurança.
+
+Situações críticas: Ambientes corporativos, sistemas financeiros e dispositivos compartilhados.
+
+2 - Criptografia:
+
+Benefícios: Protege dados sensíveis em trânsito e em repouso contra interceptação e roubo.
+
+Desafios: Impacta a performance devido ao consumo de recursos para encriptação/desencriptação.
+
+Impacto no usuário: Pode causar lentidão em operações como leitura de arquivos ou transferências, mas melhora a confiança no sistema.
+
+Situações críticas: Comunicação online, armazenamento de dados confidenciais e sistemas de pagamento.
+
+Em suma, enquanto esses mecanismos garantem maior segurança, é necessário um equilíbrio para diminuir os impactos na performance e manter uma experiência de usuário agradável.
 
 # Questão 4. Custo de Processamento versus Algoritmo Ótimo de Escalonamento
 
@@ -129,6 +202,38 @@ Considerando os conceitos de custo de processamento e algoritmo ótimo de escalo
 
 **Copilot informa**: Essa questão incentiva os alunos a refletirem sobre a complexidade e os trade-offs envolvidos na escolha de um algoritmo de escalonamento, aplicando conceitos teóricos a contextos práticos.
 
+# Resposta da Questão 4.
+Diferentes algoritmos de escalonamento afetam a performance do sistema operacional de maneiras diferentes, com vantagens e desvantagens relacionadas ao tempo de resposta, tempo de espera e uso do processador.
+
+1 - First-Come, First-Served (FCFS):
+
+Vantagens: Simples, de baixo custo computacional e fácil de implementar. Adequado para sistemas com baixa carga de processos.
+
+Desvantagens: Pode causar problemas onde processos curtos esperam longos períodos devido a processos maiores.
+
+Exemplo: Ideal para sistemas batch simples, onde a ordem de chegada é prioritária.
+
+2 - Round Robin (RR):
+
+Vantagens: Justo, pois todos os processos recebem fatias iguais de tempo. Garante tempos de resposta razoáveis, especialmente em sistemas interativos.
+
+Desvantagens: A troca de contexto frequente aumenta o custo de processamento e pode reduzir a eficiência global.
+
+Exemplo: Adequado para sistemas interativos, como multitarefa em desktops, onde tempos de resposta consistentes são críticos.
+
+3 - Impacto do custo de processamento:
+
+Algoritmos mais complexos, como Shortest Job Next (SJN) ou Priority Scheduling, podem oferecer melhor eficiência, mas exigem mais recursos computacionais para prever tempos de execução ou gerenciar prioridades. O custo de processamento elevado pode não compensar os ganhos em ambientes com hardware limitado ou alta rotatividade de processos.
+
+ 4 - Escolha do algoritmo:
+
+Em sistemas onde a previsibilidade é importante, SJN pode ser preferível.
+
+Para sistemas que priorizam a equidade, RR é mais indicado, apesar do custo de processamento adicional.
+
+Ademais, a escolha do algoritmo deve considerar o tipo de carga, os recursos disponíveis e os objetivos de performance, equilibrando eficiência e custo computacional.
+
+
 # Questão 5. Aplicativo em python vs aplicativos em c
 
 ## Questão
@@ -142,3 +247,25 @@ Explique o caminho que as instruções seguem desde um aplicativo escrito em Pyt
 **Dica:** Compare e contraste os dois processos, destacando as principais diferenças e semelhanças na forma como as instruções são processadas e executadas.
 
 **Copilot informa**: Essa questão incentiva os alunos a refletirem sobre os diferentes caminhos que as instruções seguem em linguagens interpretadas e compiladas, aplicando conceitos teóricos a contextos práticos.
+
+# Resposta da Questão 5.
+
+Os aplicativos em Python e C seguem caminhos distintos para serem executados pelo hardware:
+
+1 - Python (interpretado):
+
+O código-fonte é lido pelo interpretador Python, que o converte em bytecode intermediário (código mais próximo da linguagem de máquina).
+O bytecode é executado pela máquina virtual Python (PVM), que interpreta e executa as instruções dinamicamente.
+Durante a execução, o kernel do SO gerencia chamadas de sistema e comunicação com drivers para acessar hardware.
+
+2 - C (compilado):
+
+O código-fonte em C é traduzido diretamente em código binário por um compilador, gerando um executável.
+Esse executável é carregado pelo kernel do SO, que interage com os drivers e executa as instruções no hardware diretamente.
+
+Comparação:
+
+Python: É mais lento, pois depende do interpretador e da PVM para traduzir as instruções em tempo de execução. É mais flexível, simples e multiplataforma.
+
+C: Mais rápido e eficiente, pois as instruções já estão em formato binário pronto para execução. Exige recompilação para diferentes plataformas.
+Ambos dependem do kernel e dos drivers para acessar o hardware, mas Python adiciona uma camada de abstração, enquanto C é mais próximo do hardware.
